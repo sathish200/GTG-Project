@@ -1,0 +1,1054 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --gutter-x: 0.75rem
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 var(--gutter-x);
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    background-image: url('../assets/images/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    background-position: center;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-end {
+    justify-content: end;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-baseline {
+    align-items: baseline;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.gap-1 {
+    gap: 0.25rem;
+}
+
+.gap-2 {
+    gap: 0.5rem;
+}
+
+.gap-3 {
+    gap: 0.75rem;
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+.gap-5 {
+    gap: 4rem;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.menu {
+    padding: 11px 33px;
+}
+
+.text-gradient-color {
+    background: linear-gradient(to bottom, #032E15 5%, #016630 95%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.menu ul li {
+    list-style-type: none;
+    margin: 0 17px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #162456;
+    font-size: 16px;
+}
+
+.menu h3 {
+    font-size: 30px;
+}
+
+.menu ul li a {
+    position: relative;
+}
+
+.menu ul li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #016630;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.2s ease;
+}
+
+.menu ul li a:hover::before {
+    width: 100%;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background: linear-gradient(to bottom, #032E15, #016630);
+    color: #fff;
+    font-weight: 500;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.header-content button {
+    font-weight: 300 !important;
+}
+
+.header-content {
+    margin-top: 70px;
+}
+
+.header-content h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin: 24px 0;
+    color: #032E15;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.subtitle {
+    color: #0D542B;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.shop-btn {
+    margin-top: 1.5rem;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.card {
+    border-radius: 16px;
+}
+
+.perfume-section {
+    margin-top: 55px;
+    padding: 0 30px;
+    justify-content: center;
+}
+
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.m-0 {
+    margin: 0 !important;
+}
+
+.mt-0,
+.my-0 {
+    margin-top: 0 !important;
+}
+
+.mr-0,
+.mx-0 {
+    margin-right: 0 !important;
+}
+
+.mb-0,
+.my-0 {
+    margin-bottom: 0 !important;
+}
+
+.ml-0,
+.mx-0 {
+    margin-left: 0 !important;
+}
+
+.m-1 {
+    margin: 0.25rem !important;
+}
+
+.mt-1,
+.my-1 {
+    margin-top: 0.25rem !important;
+}
+
+.mr-1,
+.mx-1 {
+    margin-right: 0.25rem !important;
+}
+
+.mb-1,
+.my-1 {
+    margin-bottom: 0.25rem !important;
+}
+
+.ml-1,
+.mx-1 {
+    margin-left: 0.25rem !important;
+}
+
+.m-2 {
+    margin: 0.5rem !important;
+}
+
+.mt-2,
+.my-2 {
+    margin-top: 0.5rem !important;
+}
+
+.mr-2,
+.mx-2 {
+    margin-right: 0.5rem !important;
+}
+
+.mb-2,
+.my-2 {
+    margin-bottom: 0.5rem !important;
+}
+
+.ml-2,
+.mx-2 {
+    margin-left: 0.5rem !important;
+}
+
+.m-3 {
+    margin: 1rem !important;
+}
+
+.mt-3,
+.my-3 {
+    margin-top: 1rem !important;
+}
+
+.mr-3,
+.mx-3 {
+    margin-right: 1rem !important;
+}
+
+.mb-3,
+.my-3 {
+    margin-bottom: 1rem !important;
+}
+
+.ml-3,
+.mx-3 {
+    margin-left: 1rem !important;
+}
+
+.m-4 {
+    margin: 1.5rem !important;
+}
+
+.mt-4,
+.my-4 {
+    margin-top: 1.5rem !important;
+}
+
+.mr-4,
+.mx-4 {
+    margin-right: 1.5rem !important;
+}
+
+.mb-4,
+.my-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.ml-4,
+.mx-4 {
+    margin-left: 1.5rem !important;
+}
+
+.m-5 {
+    margin: 3rem !important;
+}
+
+.mt-5,
+.my-5 {
+    margin-top: 3rem !important;
+}
+
+.mt-6 {
+    margin-top: 4rem;
+}
+
+.mr-5,
+.mx-5 {
+    margin-right: 3rem !important;
+}
+
+.mb-5,
+.my-5 {
+    margin-bottom: 3rem !important;
+}
+
+.ml-5,
+.mx-5 {
+    margin-left: 3rem !important;
+}
+
+.p-0 {
+    padding: 0 !important;
+}
+
+.pt-0,
+.py-0 {
+    padding-top: 0 !important;
+}
+
+.pr-0,
+.px-0 {
+    padding-right: 0 !important;
+}
+
+.pb-0,
+.py-0 {
+    padding-bottom: 0 !important;
+}
+
+.pl-0,
+.px-0 {
+    padding-left: 0 !important;
+}
+
+.p-1 {
+    padding: 0.25rem !important;
+}
+
+.pt-1,
+.py-1 {
+    padding-top: 0.25rem !important;
+}
+
+.pr-1,
+.px-1 {
+    padding-right: 0.25rem !important;
+}
+
+.pb-1,
+.py-1 {
+    padding-bottom: 0.25rem !important;
+}
+
+.pl-1,
+.px-1 {
+    padding-left: 0.25rem !important;
+}
+
+.p-2 {
+    padding: 0.5rem !important;
+}
+
+.pt-2,
+.py-2 {
+    padding-top: 0.5rem !important;
+}
+
+.pr-2,
+.px-2 {
+    padding-right: 0.5rem !important;
+}
+
+.pb-2,
+.py-2 {
+    padding-bottom: 0.5rem !important;
+}
+
+.pl-2,
+.px-2 {
+    padding-left: 0.5rem !important;
+}
+
+.p-3 {
+    padding: 1rem !important;
+}
+
+.pt-3,
+.py-3 {
+    padding-top: 1rem !important;
+}
+
+.pr-3,
+.px-3 {
+    padding-right: 1rem !important;
+}
+
+.pb-3,
+.py-3 {
+    padding-bottom: 1rem !important;
+}
+
+.pl-3,
+.px-3 {
+    padding-left: 1rem !important;
+}
+
+.p-4 {
+    padding: 1.5rem !important;
+}
+
+.pt-4,
+.py-4 {
+    padding-top: 1.5rem !important;
+}
+
+.pr-4,
+.px-4 {
+    padding-right: 1.5rem !important;
+}
+
+.pb-4,
+.py-4 {
+    padding-bottom: 1.5rem !important;
+}
+
+.pl-4,
+.px-4 {
+    padding-left: 1.5rem !important;
+}
+
+.p-5 {
+    padding: 3rem !important;
+}
+
+.pt-5,
+.py-5 {
+    padding-top: 3rem !important;
+}
+
+.pr-5,
+.px-5 {
+    padding-right: 3rem !important;
+}
+
+.pb-5,
+.py-5 {
+    padding-bottom: 3rem !important;
+}
+
+.pl-5,
+.px-5 {
+    padding-left: 3rem !important;
+}
+
+/* text colors */
+.text-color-1 {
+    color: #032E15;
+}
+
+.text-color-2 {
+    color: #B8B8B8;
+}
+
+.text-color-3 {
+    color: #6F7577;
+}
+
+.text-color-4 {
+    color: #666666;
+}
+
+.white-text {
+    color: #fff;
+}
+
+/* background colors */
+
+.bgcolor-1 {
+    background: linear-gradient(to left, #032E15, #008236, #00C950);
+}
+
+.bgcolor-2 {
+    background-color: #F9F9F9;
+}
+
+.bgcolor-3 {
+    background: linear-gradient(to bottom, #032E15, #016630);
+}
+
+.bgcolor-4 {
+    background-color: #032E15;
+}
+
+.bgcolor-5 {
+    background-color: #032E15;
+}
+
+.bgcolor-transparent {
+    background-color: transparent;
+}
+
+.no-border {
+    border: 1px solid transparent;
+}
+
+/* Font sizes */
+.font-8 {
+    font-size: 8px;
+}
+
+.font-10 {
+    font-size: 10px !important;
+}
+
+.font-11 {
+    font-size: 11px !important;
+}
+
+.font-13 {
+    font-size: 13px !important;
+}
+
+.font-15 {
+    font-size: 15px !important;
+}
+
+.font-17 {
+    font-size: 17px !important;
+}
+
+.font-19 {
+    font-size: 19px !important;
+}
+
+.font-21 {
+    font-size: 21px !important;
+}
+
+.font-23 {
+    font-size: 23px !important;
+}
+
+.font-25 {
+    font-size: 25px !important;
+}
+
+.font-27 {
+    font-size: 27px !important;
+}
+
+.font-28 {
+    font-size: 28px !important;
+}
+
+.font-30 {
+    font-size: 30px !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.font-weight-bold {
+    font-weight: 700;
+}
+
+.font-weight-semibold {
+    font-weight: 600;
+}
+
+.font-weight-medium {
+    font-weight: 500;
+}
+
+.font-weight-light {
+    font-weight: 300;
+}
+
+.border-radius-1 {
+    border-radius: 6px;
+}
+
+.border-radius-4 {
+    border-radius: 50%;
+}
+
+.border-top-left-radius-1 {
+    border-top-left-radius: 6px;
+}
+
+.border-top-right-radius-1 {
+    border-top-right-radius: 6px;
+}
+
+.border-1 {
+    border: 1px solid #B8B8B8;
+}
+
+.border-2 {
+    border: 1px solid #919798;
+}
+
+.border-3 {
+    border: 1px solid #CDCDCD;
+}
+
+.border-4 {
+    border: 1px solid #322D2D;
+}
+
+.border-top-1 {
+    border-top: 1px solid #919798;
+}
+
+input.singleCheckBox[type="radio"] {
+    width: 14px;
+    height: 14px;
+}
+
+.text-line-through {
+    text-decoration: line-through;
+}
+
+.title-tag {
+    position: relative;
+    max-width: 100px;
+    width: 100%;
+}
+
+.tag-content {
+    position: absolute;
+    right: 0;
+    top: -10px;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    line-height: 8px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.gtg-table table {
+    border-collapse: collapse;
+}
+
+.gtg-table table tr th,
+.gtg-table table tr td {
+    border-bottom: 1px solid #666666;
+    padding: 10px 38px;
+}
+
+.gtg-table table tr th:first-child {
+    padding-left: 10px !important;
+}
+
+.gtg-table table tbody tr th:first-child {
+    text-align: start;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666666;
+}
+
+.gtg-table table tbody tr th:nth-child(2),
+.gtg-table table tbody tr td:nth-child(2),
+.gtg-table table thead tr th:nth-child(2) {
+    background-color: #F0FDF4;
+}
+
+.gtg-table table tbody tr td {
+    text-align: center;
+    font-weight: 300;
+    color: #666666;
+    font-size: 14px;
+}
+
+.subscribe-btn {
+    background-color: #653B09;
+    padding: 12px;
+    border: 1px solid transparent;
+    color: #fff;
+    align-self: start;
+}
+
+.subscription-field {
+    max-width: 450px;
+    width: 100%;
+}
+
+.subscription-field input {
+    line-height: 36px;
+    min-width: 300px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-width: thin;
+}
+
+.subscription-field input::placeholder {
+    color: #fff;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.footer ul li {
+    list-style-type: none;
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer ul {
+    max-width: 250px;
+    width: 100%;
+}
+
+.card-footer .thumbnails {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.image-slider {
+    position: relative;
+}
+
+.main-image {
+    width: 100%;
+    display: block;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 15px;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.left-arrow {
+    left: 20px;
+}
+
+.right-arrow {
+    right: 20px;
+}
+
+.thumbnails img {
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.thumbnails img.active {
+    border-color: #000;
+    transform: scale(1.05);
+}
+
+
+
+@media (min-width: 576px) {
+
+    .col-sm-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+
+    .col-sm-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-sm-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .col-md-5 {
+        -ms-flex: 0 0 41.666667%;
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+    }
+
+    .col-md-6 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-md-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .menu-button {
+        display: block;
+    }
+
+    .menu {
+        position: relative;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        top: 60px;
+        width: calc(100% - 41px);
+        background: #fff;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        display: none;
+        z-index: 1024;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li a {
+        padding: 10px 0;
+        display: block;
+        width: 100%;
+    }
+
+    .header {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-content {
+        gap: 40px !important;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+
+    .banner-title {
+        font-size: 30px !important;
+    }
+
+    .flex-sm-column {
+        flex-direction: column;
+    }
+
+    .gap-sm {
+        gap: 15px;
+    }
+
+    .perfume-container {
+        width: 150px !important;
+    }
+
+    .card-footer .thumbnails {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+
+    .gtg-table {
+        overflow: auto;
+        display: block;
+    }
+
+    .subscription-field input {
+        min-width: 100%;
+    }
+
+    .subscription-block {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .subscribe-btn {
+        margin: 0 !important;
+    }
+
+    .btn-risk {
+        margin: 0 auto;
+    }
+
+    .mt-sm-4 {
+        margin-top: 2rem;
+    }
+
+    .perfume-thimbnail-block {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .thumbnails img {
+        width: 50px !important;
+    }
+
+    .card-header img {
+        height: 250px;
+    }
+}
+
+@media (max-width:1200px) {
+    .thumbnails img {
+        width: 90px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .card-footer .thumbnails {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .menu ul li a::before {
+        position: unset;
+    }
+
+    .subscribe-btn {
+        margin: 0 !important;
+    }
+
+    .subscription-block {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header {
+        max-height: 450px;
+
+    }
+
+    .header-content {
+        margin-top: 20px;
+    }
+
+    .header-content h2 {
+        margin: 14px 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .card-footer .thumbnails {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .perfume-thimbnail-block {
+        flex-direction: column;
+    }
+
+    .card-footer .thumbnails {
+        grid-template-columns: repeat(4, 1fr) !important;
+    }
+}
+
